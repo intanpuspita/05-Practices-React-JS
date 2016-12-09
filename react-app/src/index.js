@@ -15,8 +15,11 @@ import SampleStateInLifeCycle from './SampleStateInLifeCycle';
 import SampleComponentUpdate from './SampleComponentUpdate';
 import SampleArrayData from './SampleArrayData';
 import SampleHigherOrderComp from './SampleHigherOrderComp';
+import SampleChildUtilities from './SampleChildUtilities';
+import SampleCloneElement from './SampleCloneElement';
+import SampleReusable from './SampleReusable';
 
-var sampleNumber = 15;
+var sampleNumber = 18;
 
 class MyElement extends React.Component{
     render(){
@@ -37,6 +40,9 @@ class MyElement extends React.Component{
                 <span>{ sampleNumber === 13 && <SampleComponentUpdate />}</span>
                 <span>{ sampleNumber === 14 && <SampleArrayData />}</span>
                 <span>{ sampleNumber === 15 && <SampleHigherOrderComp />}</span>
+                <span>{ sampleNumber === 16 && <SampleChildUtilities />}</span>
+                <span>{ sampleNumber === 17 && <SampleCloneElement />}</span>
+                <span>{ sampleNumber === 18 && <SampleReusable />}</span>
             </div>
         );
     }
