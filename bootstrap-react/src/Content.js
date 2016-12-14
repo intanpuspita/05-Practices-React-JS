@@ -54,10 +54,15 @@ class Image extends React.Component{
     render(){
         let id = this.props.imageid;
         return(
-            <div className="col-lg-3 col-md-4 col-xs-6 thumb">
-                <div className="thumbnail" href="#">
+            <div className="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div className="thumbnail">
                     <img className="img-responsive" src={this.props.imageurl} alt="" />
-
+                    
+                    <div className="overlay">
+                        <a className="info" href="#"><span className="glyphicon glyphicon-zoom-in"></span></a>
+                        <a className="info" href="#"><span className="glyphicon glyphicon-comment"></span></a>
+                    </div>
+            
                     <div className="caption">
                         <div className="caption-right">
                             <button className="btn btn-primary btn-round btn-sm" ref="like" onClick={() => this.like(id)}>
