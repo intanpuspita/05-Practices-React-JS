@@ -34,7 +34,7 @@ class Content extends React.Component{
     }
 }
 
-class Image extends React.Component{
+export class Image extends React.Component{
     constructor(){
         super();
         this.state = { likes:[], dislikes:[] }
@@ -80,26 +80,3 @@ class Image extends React.Component{
         )
     }
 }
-
-/*function Image(props){
-    return(
-        <div className="col-lg-3 col-md-4 col-xs-6 thumb">
-            <div className="thumbnail" href="#">
-                <img className="img-responsive" src={props.imageurl} alt="" />
-
-                <div className="caption">
-                    <div className="img-caption">
-                        <button className="btn btn-primary btn-round" ref={"like-" + props.imageid} value={props.imageid}>
-                            <span className="glyphicon glyphicon-thumbs-up"></span> 10
-                        </button>
-                        <button className="btn btn-warning btn-round" ref={props.imageid}>
-                            <span className="glyphicon glyphicon-thumbs-down"></span> 70
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}*/
-
-export default Content
